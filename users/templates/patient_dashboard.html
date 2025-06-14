@@ -1,0 +1,38 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="{% static 'dashboard.css' %}">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <h1>Patient Dashboard</h1>
+        <h2>User Details</h2>
+        <ul class="user-details">
+            <li><strong>Username:</strong> {{ user.username }}</li>
+            <li><strong>First Name:</strong> {{ user.first_name }}</li>
+            <li><strong>Last Name:</strong> {{ user.last_name }}</li>
+            <li><strong>Email:</strong> {{ user.email }}</li>
+            <li><strong>Role:</strong> {{ user.role }}</li>
+            <li><strong>City:</strong> {{ user.city }}</li>
+            <li><strong>State:</strong> {{ user.state }}</li>
+            <li><strong>Pincode:</strong> {{ user.pincode }}</li>
+            <li><strong>Address:</strong> {{ user.address_line1 }}</li>
+            <li><strong>Profile Picture:</strong><br>
+                {% if user.profile_pic %}
+                    <img src="{{ user.profile_pic.url }}" alt="Profile Picture" class="profile-pic">
+                {% else %}
+                    No profile picture uploaded.
+                {% endif %}
+            </li>
+        </ul>
+    </div>
+
+
+
+</body>
+</html>

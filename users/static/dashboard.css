@@ -1,0 +1,51 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f9ff;
+    margin: 0;
+    padding: 40px 20px;
+    color: #333;
+}
+
+.dashboard-container {
+    max-width: 800px;
+    margin: auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #0055aa;
+    text-align: center;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #003d7a;
+}
+
+.user-details {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-details li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.user-details strong {
+    color: #555;
+}
+
+.profile-pic {
+    max-width: 150px;
+    border-radius: 8px;
+    margin-top: 8px;
+    border: 2px solid #ddd;
+}
