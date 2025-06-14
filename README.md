@@ -63,7 +63,7 @@ django-auth/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/django-auth-task.git
+git clone https://github.com/ajeyajaz/across_gl_assignment1.git
 cd django-auth-task
 ```
 
